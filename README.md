@@ -1,30 +1,19 @@
-# webpackPractise
-webpack 练习
+# 基于react和webpack的轮播组件
 
-1. npm i loader
-2. 配置loader
+## 暂时支持的功能
 
-## 常用loader
-
-1. css-loader
-2. style-loader
-3. file-loader
-4. babel-loader
-5. url-loader
-
-## 插件
-
-1. html-webpack-plugin (生成html文件并将bundle文件插入到`script`标签中)
-
-## 开启服务
-
-1. webpack-dev-server
-
-
-## es6支持
-
-1. babel-loader
-2. babel-preset-es2015
-
-
-## 搜索github用户
+```
+/*
+autoPlay: true,
+hasArrows: true,
+hasDots: true,
+animate: true,
+speed: 2
+*/
+```
+1. 可设置多张图片
+2. 可设置是否支持动画
+3. 可设置动画速度
+4. 可设置左右切换按钮以及底部小按钮是否存在
+5. 可设置是否支持自动轮播
+...待进一步开发

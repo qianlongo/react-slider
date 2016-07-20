@@ -27,5 +27,15 @@ let imgs = [
     alt: 'images-5',
   }
 ];
-
-  Render.render( <App imgs={imgs} animate={true} speed={2}></App>, app);
+  /*
+  autoPlay: true,
+  hasArrows: true,
+  hasDots: true,
+  animate: true,
+  speed: 2
+  */
+  Render.render(
+    <App
+      imgs={imgs}
+      />,
+    app);

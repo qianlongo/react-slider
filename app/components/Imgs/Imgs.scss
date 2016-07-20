@@ -1,0 +1,21 @@
+ul {
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+
+    &.animate{
+      transition: left 1s;
+    }
+  }
+
+  .slider-item {
+    display: inline-block;
+    height: auto;
+
+    &>img {
+      display: block;
+      height: auto;
+      width: 100%;
+    }
+  }

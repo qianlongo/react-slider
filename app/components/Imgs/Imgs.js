@@ -5,6 +5,9 @@ export default class Imgs extends React.Component {
 
   constructor(props){
     super(props);
+    this.state = {
+      onOff: true
+    }
   }
 
   render(){
@@ -14,18 +17,19 @@ export default class Imgs extends React.Component {
           width: 100 * count + '%',
           left: curIndex * 100 + '%'
         },
-        nodes = imgs.map((item) => {
+        nodes = imgs.map((item, i) => {
           return (
             <li className="slider-item" style={{
               width:  100/count + '%'
-            }}>
-              <img src={item.url} alt={item.alt} key={new Date().getTime()}/>
+            }} key={i}>
+              <img src={item.url} alt={item.alt}/>
             </li>
           );
         });
+
     return (
       <div className="imgs-wrap">
-        <ul style={styles} className={animate ? 'animate':''}>
+        <ul style={styles} ref="ul" className={animate ? 'animate':''}>
           {nodes}
         </ul>
       </div>

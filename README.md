@@ -17,3 +17,26 @@ speed: 2
 4. 可设置左右切换按钮以及底部小按钮是否存在
 5. 可设置是否支持自动轮播
 ...待进一步开发
+
+
+## 运行
+
+
+
+``` javascript
+
+npm run dev
+
+```
+
+## 构建
+
+``` javascript
+
+npm run build
+
+```
+
+## 查看效果
+
+`http://localhost:8080/`

@@ -19,6 +19,7 @@ export default class Dots extends React.Component{
           nodes.push((
             <span className={'slider-dot' +  (i === Math.abs(curIndex) ? ' slider-dot-selected':'')}
                   onClick={this.handleMove.bind(this,-i)}
+                  key={i}  
             >
             </span>
           ))

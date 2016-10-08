@@ -71,7 +71,7 @@ export default class App extends React.Component {
 
 App.timer = null;
 App.defaultProps = {
-  autoPlay: true,
+  autoPlay: false,
   hasArrows: true,
   hasDots: true,
   animate: true,
